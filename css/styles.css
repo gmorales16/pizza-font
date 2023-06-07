@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --primary: #222222;
+  --secondary: #e5e5e5;
+  --letters: #fc200c;
+  --letters-secondary: #39b24a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  background-color: var(--primary);
+  padding: 20px 20px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav li a {
+  margin-left: 13px;
+  text-decoration: none;
+  color: white;
+}
+
+nav img {
+  height: 80px;
+}
+
+.logo-color-2 {
+  color: var(--letters);
+}
+
+.logo-color-1 {
+  color: var(--letters-secondary);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-color: var(--secondary);
+  height: 100%;
+  padding: 35px 19px;
+}
+
+article {
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+article + article {
+  margin-left: 5px;
+}
+
+article h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--letters);
+  text-align: center;
+  padding-top: 20px;
+}
+
+article h2 > span {
+  color: white;
+}
+
+article.sale {
+  background-image: url(../images/delivery.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+article.podium {
+  background-color: white;
+  padding: 0 20px;
+}
+
+article.podium > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 58px;
+}
+
+article.podium ol {
+  margin-top: 20px;
+  padding: 0;
+  font-weight: 700;
+}
+
+article.podium li + li {
+  margin-top: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: space-between;
+  color: white;
+  background-color: var(--primary);
+  padding: 20px 20px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+}
+footer li + li {
+  margin-top: 12px;
+}
+
+footer a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
